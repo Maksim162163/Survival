@@ -4,7 +4,7 @@ using UnityEngine;
 public class RotateArm : MonoBehaviour
 {
     [SerializeField] private MouseInput _mouseInput;
-    public float angleRotationZ;
+    public float AngleRotationZ;
     
     private void Update()
     {

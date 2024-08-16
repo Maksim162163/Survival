@@ -9,7 +9,7 @@ public class SystemHealthPlayer : MonoBehaviour
     private int _health;
     private float _remainingRegenerationTime;
     private FloatingHealthBar _healthBar;
-    public static bool _isAlive = true;
+    public static bool IsAlive = true;
     private bool _isDamaged = false;
 
     private void Start()
@@ -56,7 +56,7 @@ public class SystemHealthPlayer : MonoBehaviour
     {
         Time.timeScale = 0.0f;
         Destroy(gameObject);
-        _isAlive = false;
+        IsAlive = false;
         if (_losePanel != null)
         {
             _losePanel.SetActive(true);

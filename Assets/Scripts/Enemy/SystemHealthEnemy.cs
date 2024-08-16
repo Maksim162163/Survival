@@ -3,7 +3,7 @@ using UnityEngine;
 public class SystemHealthEnemy : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
-    public static int _numberKilledEnemies = 0;
+    public static int NumberKilledEnemies = 0;
 
     public void TakeDamage(int damage)
     {
@@ -16,6 +16,6 @@ public class SystemHealthEnemy : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-        _numberKilledEnemies++;
+        NumberKilledEnemies++;
     }
 }
